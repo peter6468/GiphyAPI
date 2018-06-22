@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy</title>
+    <!--bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>   
+        
+        <div class="jumbotron" style="background-color: #6f9fd8 ; color: white;">
+            <h1 class="text-center">
+                  <strong>
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>Giphy<i class="fa fa-gamepad" aria-hidden="true"></i>
+                  </strong>
+            </h1>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <button class="btn btn-info btn-sm" data-cartoon="adventuretime">Adventure Time</button>
+            <button class="btn btn-info btn-sm" data-cartoon="avatarthelastairbender">Avatar</button>
+            <button class="btn btn-info btn-sm" data-cartoon="gravityfalls">Gravity Falls</button>
+            <button class="btn btn-info btn-sm" data-cartoon=="amazing-world-of-gumball">The Amazing World of Gumball</button>
+            <button class="btn btn-info btn-sm" data-cartoon="stevenuniverse">Steven Universe</button>
+            <button class="btn btn-info btn-sm" data-cartoon="teentitan"=>Teen Titan</button>
+            <button class="btn btn-info btn-sm" data-cartoon="phineasandferb">Phineas and Ferb</button>
+            <button class="btn btn-info btn-sm" data-cartoon="spongebob">Spongebob</button>
+            <button class="btn btn-info btn-sm" data-cartoon="regularshow">The Regular Show</button>
+            <button class="btn btn-info btn-sm" data-cartoon="samuraijack">Samurai Jack</button>
+
+            <div id="myButtons"></div>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Search Your Fav!!!</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+          
+    <!--<div class="row">-->
+      <div class="container>">
+          <span><div id="gifs-appear-here"></div></span>
+      </div>
+    <!--</div>-->
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
