@@ -10,6 +10,7 @@
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--jqeury-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>   
@@ -23,31 +24,21 @@
         </div>
 
         <div class="row">
-          <div class="container">
-            <button class="btn btn-info btn-sm" data-cartoon="adventuretime">Adventure Time</button>
-            <button class="btn btn-info btn-sm" data-cartoon="avatarthelastairbender">Avatar</button>
-            <button class="btn btn-info btn-sm" data-cartoon="gravityfalls">Gravity Falls</button>
-            <button class="btn btn-info btn-sm" data-cartoon=="amazing-world-of-gumball">The Amazing World of Gumball</button>
-            <button class="btn btn-info btn-sm" data-cartoon="stevenuniverse">Steven Universe</button>
-            <button class="btn btn-info btn-sm" data-cartoon="teentitan"=>Teen Titan</button>
-            <button class="btn btn-info btn-sm" data-cartoon="phineasandferb">Phineas and Ferb</button>
-            <button class="btn btn-info btn-sm" data-cartoon="spongebob">Spongebob</button>
-            <button class="btn btn-info btn-sm" data-cartoon="regularshow">The Regular Show</button>
-            <button class="btn btn-info btn-sm" data-cartoon="samuraijack">Samurai Jack</button> 
-            <div id="myButtons"></div>
+
+          <div class="container" id="myButtons">
           </div>
         </div>
-
-        <nav class="navbar navbar-light bg-light">
+          
+          <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand">Search Your Fav!!!</a>
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="user-input">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit-btn">Search</button>
             </form>
-          </nav>
+        </nav>
           
     <!--<div class="row">-->
-      <div class="container>">
+      <div class="container" id="images">
           <span><div id="gifs-appear-here"></div></span>
       </div>
     <!--</div>-->

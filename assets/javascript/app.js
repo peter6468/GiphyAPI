@@ -3,7 +3,7 @@
 //Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside 
 //$( window ).on( "load", function() { ... }) will run once the entire page (images or iframes), 
 //not just the DOM, is ready.
-$( document ).ready(function() {
+$(document).ready(function() {
   console.log( "ready!" );
 
 var topics =["Adventure Time", "Avatar", "Gravity Falls", "The Amazing World of Gumball", "Steven Universe", "Teen Titan", "Phineas and Ferb", "Spongebob", "The Regular Show", "Samurai Jack"];
@@ -11,12 +11,13 @@ var topics =["Adventure Time", "Avatar", "Gravity Falls", "The Amazing World of 
 //topic button: none of this works
   function createButtons() {
 
+  $("#myButtons").empty();
   $("#user-input").empty();
 
   for (var i =0; i < topics.length; i++) {
     var a = $("<button>");
         a.addClass("topic");
-        a.attr("data-name", topics[i]);
+        a.attr("data-cartoon", topics[i]);
         a.text(topics[i]);
         $("#myButtons").append(a);
 
@@ -33,7 +34,9 @@ var topics =["Adventure Time", "Avatar", "Gravity Falls", "The Amazing World of 
     console.log(topics);
 
     //add new cartton to array
-    topics.push(topic);
+    if (topics.indexOf(topic) === -1) {
+      topics.push(topic);
+    }
 
     //call the function
     createButtons();
@@ -58,8 +61,8 @@ $("#gifs-appear-here").on("click", ".pix img", function() {
     $(this).attr("data-state", "still");
   }
 });
- 
-$("button").on("click", function() {
+ //event del. myButton wh/lives html than find child topic and run function
+$("#myButtons").on("click", ".topic", function() {
   // Grabbing and storing the data-cartoon property value from the button
   var cartoon = $(this).attr("data-cartoon");
 
@@ -117,4 +120,6 @@ $("button").on("click", function() {
       }
     });
 });
+
+createButtons();
 });   

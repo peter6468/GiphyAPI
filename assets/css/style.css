@@ -15,11 +15,14 @@ body, html {
     background-size: cover;    
 }
 
-button {
-    padding: 10px;
-    margin: 5px;
+#myButtons {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     position: relative;
+    border: 20px;
     font-family: 'Indie Flower', cursive;
+    display: #6f9fd8;
 }
 
 .navbar {
@@ -27,8 +30,9 @@ button {
     margin-left: 820px;
   }
 
-  #gifs-appear-here {
-      clear: both;
-      display: inline;
+  .pix {
+      width: 30%;
+      display: inline-block;
       flex-wrap: wrap;
+
   }
