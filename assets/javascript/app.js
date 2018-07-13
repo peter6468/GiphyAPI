@@ -45,7 +45,7 @@ var topics =["Adventure Time", "Avatar", "Gravity Falls", "The Amazing World of 
     return false;
   });
 
-//this doesnt work either: when i press it goes away instead of animate to still or vice versa
+
 $("#gifs-appear-here").on("click", ".pix img", function() {
   // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
   var state = $(this).attr("data-state");
